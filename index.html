@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashvasa — Someone who stays with you</title>
+<meta name="description" content="Ashvasa walks beside women facing difficult situations at home — helping them find the right support, and staying with them through every step.">
+<meta name="theme-color" content="#FAF5EE">
+<meta property="og:title" content="Ashvasa — Someone who stays with you">
+<meta property="og:description" content="Help exists, but it is scattered. Ashvasa stays with a woman through the whole journey and connects her to the right people at the right time.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ashvasa.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23B8553A'/%3E%3Cpath d='M12 46c8-4 12-12 20-26 8 14 12 22 20 26' fill='none' stroke='%23FAF5EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cream:#FAF5EE; --sand:#F0E5D5; --ink:#2B2A33; --muted:#5E5B66;
+  --terra:#B8553A; --terra-dark:#8F3F29; --sage:#5F816D; --sage-soft:#DCE8DF;
+  --line:#E3D6C3; --radius:18px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--terra-dark)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sage);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem)}
+h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem;display:block}
+section{padding:88px 0}
+.lede{font-size:1.25rem;color:var(--muted);max-width:640px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(250,245,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{font-family:var(--serif);font-size:1.6rem;font-weight:600;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand svg{width:30px;height:30px}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;color:var(--ink);font-size:.95rem}
+nav a:hover{color:var(--terra)}
+.exit{background:var(--ink);color:#fff;border:0;font:inherit;font-size:.85rem;font-weight:600;padding:9px 16px;border-radius:999px;cursor:pointer}
+.exit:hover{background:#000}
+@media(max-width:760px){nav .hide-sm{display:none}}
+
+/* hero */
+.hero{padding:96px 0 80px;background:
+  radial-gradient(900px 420px at 85% -10%,var(--sage-soft),transparent 70%),
+  radial-gradient(700px 380px at -10% 110%,var(--sand),transparent 70%)}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .lede{margin:1.2rem 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem}
+.btn.primary{background:var(--terra);color:#fff}
+.btn.primary:hover{background:var(--terra-dark)}
+.btn.ghost{border:2px solid var(--ink);color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.meaning{margin-top:3rem;font-size:.95rem;color:var(--muted);border-left:3px solid var(--terra);padding-left:16px;max-width:520px}
+.meaning b{font-family:var(--serif);font-size:1.1rem;color:var(--ink)}
+
+/* problem / journey */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}section{padding:64px 0}}
+.journey{list-style:none;margin:0;padding:0;position:relative}
+.journey:before{content:"";position:absolute;left:19px;top:14px;bottom:14px;width:2px;background:var(--line)}
+.journey li{position:relative;padding:8px 0 8px 58px;font-size:1.05rem}
+.journey li:before{content:"";position:absolute;left:10px;top:15px;width:20px;height:20px;border-radius:50%;background:var(--cream);border:3px solid var(--terra)}
+.journey li:first-child:before{background:var(--terra)}
+.journey li:last-child:before{border-color:var(--sage);background:var(--sage)}
+.journey small{display:block;color:var(--muted);font-size:.85rem}
+.callout{margin-top:2rem;padding:20px 24px;background:var(--sand);border-radius:var(--radius);font-family:var(--serif);font-size:1.2rem;line-height:1.4}
+
+/* how */
+.how{background:var(--ink);color:#F5EFE6}
+.how h2,.how h3{color:#fff}
+.how .eyebrow{color:#F0B79F}
+.how .lede{color:#CFC8D6}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:40px 0 12px}
+.node{padding:12px 20px;border-radius:999px;border:1.5px solid #6c6978;font-size:.95rem}
+.node.us{background:var(--terra);border-color:var(--terra);color:#fff;font-weight:600}
+.arrow{color:#9d98a8}
+.flow-note{font-size:.9rem;color:#B5AEBF;margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:#383743;border-radius:var(--radius);padding:28px}
+.card .n{font-family:var(--serif);font-size:2.2rem;color:#F0B79F;line-height:1;margin-bottom:12px}
+.card p{margin:0;color:#D8D2DF;font-size:1rem}
+
+/* support areas */
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:40px}
+.area{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.area h3{font-size:1.15rem;margin-bottom:.4em}
+.area p{margin:0;color:var(--muted);font-size:.98rem}
+.area .dot{width:12px;height:12px;border-radius:50%;background:var(--terra);margin-bottom:16px}
+.area:nth-child(even) .dot{background:var(--sage)}
+
+/* community + now */
+.band{background:var(--sage-soft)}
+.pill{display:inline-block;background:#fff;border:1px solid #bcd1c3;border-radius:999px;padding:5px 14px;font-size:.82rem;font-weight:600;color:var(--sage);margin-bottom:1rem}
+.listen{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+.listen ul{margin:.6em 0 0;padding-left:1.1em;color:var(--muted)}
+.listen li{margin-bottom:.4em}
+
+/* help box + footer */
+.help{background:var(--terra);color:#fff;padding:56px 0}
+.help h2{color:#fff;font-size:1.8rem}
+.help p{max-width:640px}
+.nums{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px}
+.nums a{background:#fff;color:var(--terra-dark);text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px}
+.nums span{font-weight:500}
+footer{padding:44px 0;font-size:.92rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Ashvasa home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#B8553A"/><path d="M12 46c8-4 12-12 20-26 8 14 12 22 20 26" fill="none" stroke="#FAF5EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Ashvasa
+    </a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#problem">The problem</a>
+      <a class="hide-sm" href="#approach">Our approach</a>
+      <a class="hide-sm" href="#now">Where we are</a>
+      <button class="exit" id="exit" type="button" title="Leave this site immediately (Esc key twice)">Quick exit ✕</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">For women facing difficult situations at home</span>
+    <h1>You don’t have to<br>figure it out <em>alone.</em></h1>
+    <p class="lede">Help exists — but it is scattered across many organisations, and finding the right one is exhausting. Ashvasa is the one who stays with you, step by step, and connects you to the right people along the way.</p>
+    <div class="btns">
+      <a class="btn primary" href="#approach">How we help</a>
+      <a class="btn ghost" href="#now">Talk with us</a>
+    </div>
+    <p class="meaning"><b>Ashvasa</b> (आश्वास) — <i>assurance</i>. The feeling that someone is with you, and that you will be all right.</p>
+  </div>
+</section>
+
+<section id="problem">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">The problem</span>
+      <h2>Her life doesn’t happen in categories.</h2>
+      <p class="lede">Most organisations are built around one problem — violence, jobs, schooling, legal rights, counselling. But a woman’s situation never stays inside one of those boxes.</p>
+      <p>She may need legal advice, then a safe place to stay, then a bank account of her own, then work, then childcare. No single organisation covers all of that, and each new door means starting her story over, with strangers.</p>
+      <p>Many women never knock. Others give up halfway.</p>
+      <div class="callout">The help is out there. What’s missing is someone to walk her to it.</div>
+    </div>
+    <ol class="journey" aria-label="An example journey">
+      <li>A difficult situation at home<small>Where it often begins</small></li>
+      <li>Needs legal advice</li>
+      <li>Needs somewhere safe to stay</li>
+      <li>Has no independent money<small>Needs a bank account of her own</small></li>
+      <li>Needs employment</li>
+      <li>Needs childcare</li>
+      <li>Independent housing<small>A life that is hers</small></li>
+    </ol>
+  </div>
+</section>
+
+<section class="how" id="approach">
+  <div class="wrap">
+    <span class="eyebrow">Our approach</span>
+    <h2>One trusted companion.<br>The right specialist at every step.</h2>
+    <p class="lede">We don’t try to be experts in everything. We orchestrate — we listen, we refer you to credible organisations and services, and we stay beside you until you reach the outcome you want.</p>
+
+    <div class="flow" aria-label="How Ashvasa works">
+      <span class="node">Woman</span><span class="arrow">→</span>
+      <span class="node us">Ashvasa</span><span class="arrow">→</span>
+      <span class="node">Right organisation</span><span class="arrow">→</span>
+      <span class="node us">Ashvasa</span><span class="arrow">→</span>
+      <span class="node">Next step</span><span class="arrow">→</span>
+      <span class="node us">Ashvasa</span><span class="arrow">→</span>
+      <span class="node">Outcome</span>
+    </div>
+    <p class="flow-note">Not: woman → a random organisation → work it all out on her own.</p>
+
+    <div class="cards">
+      <div class="card"><div class="n">1</div><h3>We listen first</h3><p>No forms to fill and no pitch. You tell us what is happening, in your own words and at your own pace.</p></div>
+      <div class="card"><div class="n">2</div><h3>We find the right help</h3><p>We connect you to credible organisations and services, matched to what you need now — not whatever is nearest.</p></div>
+      <div class="card"><div class="n">3</div><h3>We stay with you</h3><p>When one step ends, we help with the next. You are never handed off and forgotten.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="support">
+  <div class="wrap">
+    <span class="eyebrow">What we connect you to</span>
+    <h2>Many kinds of support, one point of contact.</h2>
+    <p class="lede">We work alongside established organisations across the whole journey.</p>
+    <div class="areas">
+      <div class="area"><div class="dot"></div><h3>Safety &amp; legal rights</h3><p>Protection from violence, legal advice, and somewhere safe to stay.</p></div>
+      <div class="area"><div class="dot"></div><h3>Livelihoods &amp; financial independence</h3><p>Skills, jobs, financial literacy, credit, and a bank account of her own.</p></div>
+      <div class="area"><div class="dot"></div><h3>Education &amp; skills</h3><p>Learning support for her and her children, and the knowledge to move forward.</p></div>
+      <div class="area"><div class="dot"></div><h3>Counselling &amp; wellbeing</h3><p>Someone qualified to talk to, when carrying it all feels too heavy.</p></div>
+      <div class="area"><div class="dot"></div><h3>Home &amp; childcare</h3><p>Stable housing and care for children, so she can build a life on her own terms.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="community">
+  <div class="wrap split">
+    <div>
+      <span class="pill">Something we’re exploring</span>
+      <h2>Hearing from women who’ve been there.</h2>
+      <p class="lede" style="color:var(--ink);opacity:.8">Trust travels by word of mouth. We’re exploring a circle of women who have found help — and who can tell others, honestly, what the way forward looked like.</p>
+    </div>
+    <div class="listen">
+      <h3>Why this matters</h3>
+      <ul>
+        <li>It is easier to ask for help when you’ve heard from someone who did.</li>
+        <li>A woman who has been through it knows what questions to ask.</li>
+        <li>No one should have to start from zero.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="now">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Where we are</span>
+      <h2>We’re just beginning — and we’re listening first.</h2>
+      <p class="lede">Before we build anything, we want to understand your world: where women get stuck, who they trust, and what happens after they ask for help.</p>
+    </div>
+    <div class="listen">
+      <h3>We’d like to hear from you</h3>
+      <p style="color:var(--muted);margin-bottom:.4em">If you’re willing to talk, we’re curious about:</p>
+      <ul>
+        <li>Who you would turn to if you needed help.</li>
+        <li>What makes someone trustworthy enough to ask.</li>
+        <li>What has made it hard to seek help.</li>
+        <li>What happened the last time you, or someone you know, tried.</li>
+      </ul>
+      <p style="margin-top:1.2em;color:var(--muted);font-size:.95rem"><!-- TODO: add contact details (email / WhatsApp number) --> Contact details will be added here shortly. Everything you share is treated as confidential.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<aside class="help" aria-label="Emergency help">
+  <div class="wrap">
+    <h2>If you are in danger right now</h2>
+    <p>Please don’t wait for us. Reach out to an emergency service immediately.</p>
+    <div class="nums">
+      <a href="tel:112">112 <span>· Emergency</span></a>
+      <a href="tel:181">181 <span>· Women Helpline</span></a>
+    </div>
+  </div>
+</aside>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Ashvasa</span>
+    <span>This site doesn’t use cookies, analytics, or trackers.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  function leave(){ window.open('https://www.google.com/','_blank'); window.location.replace('https://www.google.com/'); }
+  document.getElementById('exit').addEventListener('click',leave);
+  var last=0;
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){ var n=Date.now(); if(n-last<800) leave(); last=n; }
+  });
+})();
+</script>
+</body>
+</html>
